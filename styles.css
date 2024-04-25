@@ -1,0 +1,193 @@
+/* Reset CSS */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles pour le menu de navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styles pour la section principale */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styles pour la section d'accueil (page index.html) */
+.hero {
+    background-image: url('images/home.jpg'); 
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Assurez-vous qu'il n'y a pas de marge */
+    padding: 0; /* Assurez-vous qu'il n'y a pas de rembourrage */
+}
+
+/* Styles pour la section d'imc (page imc.html) */
+.hero2 {
+    background-image: url('images/imc.jpg'); 
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+    padding: 0; 
+}
+
+.calculate-imc-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.calculate-imc-link:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Styles pour la page de calcul de l'IMC (page imc.html) */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: inline-block;
+    width: 100px;
+}
+
+.form-group input[type="number"] {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-group select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+table th {
+    background-color: #f0f0f0;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Styles pour la barre de progression de l'IMC */
+.progress-container {
+    width: 100%;
+    height: 30px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Styles pour les différentes catégories de l'IMC */
+.progress-bar.underweight {
+    background-color: #ffc107; /* Couleur jaune pour poids insuffisant */
+}
+
+.progress-bar.normal {
+    background-color: #28a745; /* Couleur verte pour poids normal */
+}
+
+.progress-bar.overweight {
+    background-color: #ffc107; /* Couleur jaune pour surpoids */
+}
+
+.progress-bar.obese {
+    background-color: #dc3545; /* Couleur rouge pour obésité */
+}
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wsanté - Calculateur d'IMC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="imc.html">IMC</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero2">
+    <div class="container">
+        <h1>Calculateur d'Indice de Masse Corporelle (IMC)</h1>
+        <form id="imc-form">
+            <div class="form-group">
+                <label for="weight">Poids :</label>
+                <input type="number" id="weight" name="weight" required>
+                <select id="weight-unit">
+                    <option value="kg">kg</option>
+                    <option value="lbs">lbs</option>
+                </select>
+                <span id="weight-conversion"></span>
+            </div>
+            <div class="form-group">
+                <label for="height">Taille :</label>
+                <input type="number" id="height" name="height" step="0.01" required>
+                <select id="height-unit">
+                    <option value="m">m</option>
+                    <option value="feet">feet</option>
+                </select>
+                <span id="height-conversion"></span>
+            </div>
+            <button type="submit">Calculer</button>
+        </form>
+        <div id="result"></div>
+
+        <h2 id="imc-table-title" style="display: none;">Interprétation de l'IMC :</h2>
+        <table id="imc-table" style="display: none;">
+            <tr>
+                <th>IMC</th>
+                <th>Catégorie</th>
+                <th>Risques pour la santé</th>
+                <th>Couleurs</th>
+            </tr>
+            <tr>
+                <td>Moins de 18.5</td>
+                <td>Poids insuffisant</td>
+                <td>Malnutrition, risques accrus de maladies</td>
+                <td>Rouge</td>
+            </tr>
+            <tr>
+                <td>18.5 - 24.9</td>
+                <td>Poids normal</td>
+                <td>Moindre risque de maladies, meilleure santé générale</td>
+                <td>Vert</td>
+            </tr>
+            <tr>
+                <td>25 - 29.9</td>
+                <td>Surpoids</td>
+                <td>Risques accrus de maladies comme le diabète et les maladies cardiaques</td>
+                <td>Orange</td>
+            </tr>
+            <tr>
+                <td>30 ou plus</td>
+                <td>Obésité</td>
+                <td>Risques accrus de maladies graves, y compris le diabète de type 2 et les maladies cardiaques</td>
+                <td>Rouge</td>
+            </tr>
+        </table>
+    </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
